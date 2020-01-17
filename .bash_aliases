@@ -5,8 +5,12 @@ alias updist='sudo apt-get update && sudo apt-get dist-upgrade'
 
 alias clearcaches='sh scripts/clear_caches.sh'
 
+# Youtube-dl
 alias mp3dl="youtube-dl -x --audio-format mp3 -o '%(title)s.%(ext)s'"
 alias mp3plylstdl="youtube-dl -cit --extract-audio --audio-format mp3"
+
+listen-to-yt() { if [[ -z "$1" ]]; then echo "Enter a search string!"; else mpv "$(youtube-dl --default-search 'ytsearch1:' \"$1\" --get-url | tail -1)"; fi }
+
 
 alias rmspace="find -name '* *' -type f | rename 's/ /_/g'"
 
