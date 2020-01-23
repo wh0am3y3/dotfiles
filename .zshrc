@@ -77,7 +77,7 @@ ZSH_DISABLE_COMPFIX="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git tmux pip pipenv virtualenv zsh-autosuggestions extract docker web-search
+  git tmux pip pipenv virtualenv zsh-autosuggestions extract docker web-search zsh-syntax-highlighting
 )
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=3'
@@ -122,3 +122,5 @@ fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+[ -f ~/.resh/shellrc ] && source ~/.resh/shellrc
