@@ -23,3 +23,7 @@ alias tb="nc termbin.com 9999"
 alias nv="nvim"
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 
+# python server
+alias py3server="python3 -m http.server 80"             # opening server on port 80 with local ip address
+
+
